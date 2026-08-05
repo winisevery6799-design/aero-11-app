@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/background.jpg);
+    background-image: url(img/background.webp);
     background-size: cover;
     font-family: Segoe UI;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
     
 }
 .container:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 nav {
     backdrop-filter: blur(10px);
@@ -38,6 +38,9 @@ nav {
     padding: 10px 20px;
 }
 .clock {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -45,6 +48,14 @@ nav {
     border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.08);
+}
+.clock-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.clock-time {
+    white-space: nowrap;
 }
 a {
     text-decoration: none;
