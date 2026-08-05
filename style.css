@@ -1,3 +1,97 @@
-body {{
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    font-family: Segoe UI;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+
+}
+.container {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: auto;
+    transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
     
-}}
+}
+.container:hover {
+  transform: scale(1.1);
+}
+nav {
+    backdrop-filter: blur(10px);
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+.clock {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 8px 12px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+}
+a {
+    text-decoration: none;
+    color: rgb(116, 44, 116);
+    font-size: 20px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+a:hover {
+    transform: scale(1.2);
+}
+.navbar:hover {
+    transform: scale(1.02);
+}
+.note {
+    background-color: green;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    margin: 50px 50px;
+}
+.UC {
+    background-color: rgba(172, 255, 47, 0.473);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    margin: 50px 50px;
+}
+.rowhead {
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+.row {
+    display: flex;
+   margin: 30px 30px;
+}
+.rowitem {
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.rowitem:hover {
+    transform: scale(1.2);
+}
