@@ -106,3 +106,7 @@ transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
 .rowitem:hover {
     transform: scale(1.2);
 }
+.infobox {
+    text-align: left;
+    align-items: left;
+}
