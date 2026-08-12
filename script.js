@@ -1,5 +1,5 @@
 if (window.navigator.userAgent.indexOf('MSIE ') > -1) {
-  window.location.href = 'index4.html';
+  window.location.href = 'ub.html';
 }
 
 function updateClock() {
