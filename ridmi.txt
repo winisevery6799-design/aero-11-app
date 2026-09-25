@@ -1,0 +1,11 @@
+aero 11 readme
+issues
+1. browser no working (will be fixed in final version) (fixable by chyanging compability setting to have the compability mode to windows 8 or 7)
+2. Dwm not working (open glass not working) (only sometimes)
+3. Windows Media center having graphical issues for those who are running aero 11 in vmware workstation 9-12 
+4. Explorer showing blank screen  on opening folder (fixable by  reopening)
+
+things to know
+1. The minimize and maximize animation is not final and is for testing (if you find this cool then notify me)
+2. the browser is not expected to be shipping in the final version as to having issues to render the app itself
+3. the windows 7 taskbar and start menu is not going to be shipped in the final version

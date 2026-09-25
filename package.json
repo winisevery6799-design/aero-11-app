@@ -1,9 +1,9 @@
 {
   "name": "aero-11-app",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": true,
-  "author": "Aero 11",
-  "description": "Minimal Windows desktop wrapper for the Aero 11 website",
+  "author": "Windows is everything",
+  "description": "Welcome screen component for Aero 11",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "com.aero11.app",
-    "productName": "Aero 11",
+    "productName": "Welcome Screen Component for Aero 11",
     "asar": false,
     "directories": {
       "output": "dist"

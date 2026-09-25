@@ -3,11 +3,11 @@ const path = require('path');
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1280,
-    height: 820,
-    minWidth: 1000,
-    minHeight: 700,
-    title: 'Aero 11',
+    width: 800,
+    height: 600,
+    minWidth: 800,
+    minHeight: 600,
+    title: 'Aero 11 Welcome Screen',
     autoHideMenuBar: true,
     icon: path.join(__dirname, 'build', 'icon.ico'),
     webPreferences: {

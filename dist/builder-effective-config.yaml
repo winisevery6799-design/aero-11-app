@@ -2,7 +2,7 @@ directories:
   output: dist
   buildResources: build
 appId: com.aero11.app
-productName: Aero 11
+productName: Welcome Screen Component for Aero 11
 asar: false
 win:
   icon: build/icon.ico
