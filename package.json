@@ -1,0 +1,51 @@
+{
+  "name": "aero-11-app",
+  "version": "0.5.0",
+  "private": true,
+  "author": "Aero 11",
+  "description": "Minimal Windows desktop wrapper for the Aero 11 website",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "serve": "node server.js",
+    "dist": "electron-builder",
+    "rebuild": "powershell -ExecutionPolicy Bypass -File .\\rebuild-installer.ps1"
+  },
+  "devDependencies": {
+    "electron": "^44.3.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.aero11.app",
+    "productName": "Aero 11",
+    "asar": false,
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "signExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Aero 11",
+      "artifactName": "Aero-11-${version}-setup.exe",
+      "deleteAppDataOnUninstall": false,
+      "include": "build/installer.nsh"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.aero11.app
+productName: Aero 11
+asar: false
+win:
+  icon: build/icon.ico
+  signExecutable: false
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: true
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Aero 11
+  artifactName: Aero-11-${version}-setup.exe
+  deleteAppDataOnUninstall: false
+  include: build/installer.nsh
+files: []
+electronVersion: 44.3.0
